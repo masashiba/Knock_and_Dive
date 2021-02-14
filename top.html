@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Knock & Dive | 第75回灘校文化祭</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="bgimgs">
+      <img v-for="img in imgs" :key = "img.id" :src="'./img/bgimgs/' + img.feature + '.svg'" :style="{width: img.width*100/1785 + '%', top: img.top*100/1785 + '%', left: img.left*100/1785 + '%'}">
+    </div>
+    <div id="blue-container">
+      <div id="white-container">
+        <div id="logos">
+          <img v-for="id in 9" :src="'./img/logo/logo'+id+'.svg'" :style="{ width: (1.8*id+0.9) + '%' }">
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

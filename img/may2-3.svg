@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="233.721" height="111.783" viewBox="0 0 233.721 111.783">
+  <g id="グループ_1" data-name="グループ 1" transform="translate(-1202 -385.861)">
+    <text id="_2" data-name="2" transform="translate(1251.523 480.67) rotate(-8)" font-size="69.28" font-family="QuietSans-ExtraBoldItalic, Quiet Sans" font-weight="800" font-style="italic"><tspan x="0" y="0">2</tspan></text>
+    <text id="_5" data-name="5" transform="translate(1208.958 439.828) rotate(-8)" font-size="51.96" font-family="QuietSans-ExtraBoldItalic, Quiet Sans" font-weight="800" font-style="italic"><tspan x="0" y="0">5</tspan></text>
+    <line id="線_1" data-name="線 1" x1="42.638" y2="60.061" transform="translate(1222.606 406.983)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    <text id="_3" data-name="3" transform="translate(1359.409 464.819) rotate(-8)" font-size="69.28" font-family="QuietSans-ExtraBoldItalic, Quiet Sans" font-weight="800" font-style="italic"><tspan x="0" y="0">3</tspan></text>
+    <text id="_月_" data-name="(月)" transform="translate(1292.995 469.899) rotate(-6)" font-size="20" font-family="GenShinGothic-Light, Gen Shin Gothic" font-weight="300"><tspan x="0" y="0">(</tspan><tspan y="0" font-family="GenShinGothic-Heavy, Gen Shin Gothic" font-weight="800">月</tspan><tspan y="0">)</tspan></text>
+    <text id="_火_" data-name="(火)" transform="translate(1402.274 454.657) rotate(-6)" font-size="20" font-family="GenShinGothic-Light, Gen Shin Gothic" font-weight="300"><tspan x="0" y="0">(</tspan><tspan y="0" font-family="GenShinGothic-Heavy, Gen Shin Gothic" font-weight="800">火</tspan><tspan y="0">)</tspan></text>
+    <path id="パス_3" data-name="パス 3" d="M1330.284,442.642l1.3,12.339,12-7.77Z" transform="translate(0.745 -0.555)"/>
+  </g>
+</svg>

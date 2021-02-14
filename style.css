@@ -1,0 +1,44 @@
+html::-webkit-scrollbar{
+  display:none;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  margin: 4.3% 3.5%;
+}
+
+#bgimgs{
+  width: 100%;
+  height: 100%;
+}
+
+#bgimgs img{
+  position: absolute;
+}
+
+#blue-container{
+  background-color: #5CB4EF;
+  width: 100%;
+  padding: 0.84% 0;
+  height: 1000px;
+}
+
+#white-container{
+  background-color: #FFF;
+  width: 98.32%;
+  margin: 0 auto;
+  height: 50%;
+}
+
+#logos{
+  position: absolute;
+  left: -1%;
+  width: 114%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  white-space: nowrap;
+}
