@@ -8,14 +8,21 @@
   </head>
   <body>
     <div id="bgimgs">
-      <img v-for="img in imgs" :key = "img.id" :src="'./img/bgimgs/' + img.feature + '.svg'" :style="{width: img.width*100/1785 + '%', top: img.top*100/1785 + '%', left: img.left*100/1785 + '%'}">
+      <img v-for="img in imgs" :key = "img.id" :src="'./img/bgimgs/' + img.feature + '.svg'" :style="{width: img.width*100/1920 + '%', top: img.top*100/3536 + '%', left: img.left*100/1920 + '%'}">
     </div>
     <div id="blue-container">
       <div id="white-container">
+        <div id="headimgs">
+          <img src="./img/第75回灘校文化祭.svg" style="width:26%; margin-bottom: 2%;">
+          <img src="./img/type.svg" style="width:52%; margin-right: 3%">
+          <img src="./img/5月2から5月3.svg" style="width:16%; transform:rotate(7.6deg); margin-bottom: 2%;">
+        </div>
         <div id="logos">
           <img v-for="id in 9" :src="'./img/logo/logo'+id+'.svg'" :style="{ width: (1.8*id+0.9) + '%' }">
         </div>
       </div>
+    </div>
+    <div id="red-container">
     </div>
     <script src="./script.js"></script>
   </body>
