@@ -13,9 +13,9 @@ body{
 }
 
 #headimgs{
-  width: 72%;
+  width: 74%;
   transform: rotate(-7.6deg);
-  margin: 0 21% -9% 7%;
+  margin: 0 21% -9% 5%;
   padding-top: 16%;
 }
 
@@ -56,4 +56,10 @@ body{
   align-items: flex-end;
   padding: 0 0 16.6% 0;
   /* white-space: nowrap; */
+}
+
+#explanation{
+  display:flex;
+  justify-content: space-between;
+  padding: 18.3% 0;
 }

@@ -21,6 +21,9 @@
           <img v-for="id in 9" :src="'./img/logo/logo'+id+'.svg'" :style="{ width: (1.8*id+0.9) + '%' }">
         </div>
       </div>
+      <div id="explanation">
+        <explanation-box v-for="explanation in explanations" v-bind="explanation" :key="explanation.id" style="width: 41.3%">
+      </div>
     </div>
     <div id="red-container">
     </div>
