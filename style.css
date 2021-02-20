@@ -84,4 +84,12 @@ body{
 
 #countdown{
   background-color: #5CB4EF;
+  text-align: center;
+  color: white;
+}
+
+#countdown p{
+  margin-top: 0;
+  font-size: 3vw;
+  font-family: "GenShinGothic-Heavy";
 }

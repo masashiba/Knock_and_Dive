@@ -33,8 +33,9 @@
         <iframe class="video" src="https://www.youtube.com/embed/UuAKaZj4XFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-    <div id="countdown">
-      <p><img src="./img/type.svg" style="width:52%; margin-right: 3%">まであと{{ left }}日</p>
+    <div id="countdown" v-if="left>=0">
+      <p><img src="./img/type.svg" style="width:52%; margin-right: 3%">まで</p>
+      <p>あと<span style="font-size: 7vw; !important">{{ left }}</span>日</p>
     </div>
     <script src="./script.js"></script>
   </body>
