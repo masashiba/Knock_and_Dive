@@ -1,22 +1,74 @@
-html::-webkit-scrollbar{
-  display:none;
+@font-face {
+  font-family: "GenShinGothic-Medium";
+  src: url("./assets/font/GenShinGothic-Medium.woff2") format("woff2"),
+       url("./assets/font/GenShinGothic-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GenShinGothic-Heavy";
+  src: url("./assets/font/GenShinGothic-Heavy.woff2") format("woff2"),
+       url("./assets/font/GenShinGothic-Heavy.woff") format("woff");
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disableScroll {
+  0% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: auto;
+  }
 }
 
 html{
   overflow-x: hidden;
+  overflow-y: hidden;
+  animation: disableScroll .1s linear 4.4s 1 normal forwards;
 }
 
 body{
-  padding: 4.3% 3.5%;
+  padding: 4.3% 3.5% 0 3.5%;
   margin: 0;
   position: relative;
 }
 
 #headimgs{
   width: 74%;
-  transform: rotate(-7.6deg);
+  -webkit-transform: rotate(-7.6deg);
+          transform: rotate(-7.6deg);
   margin: 0 21% -9% 5%;
   padding-top: 16%;
+  clip-path: inset(0 100% 0 0);
+  animation: slide 2s ease 1s 1 normal forwards;
 }
 
 #bgimgs{
@@ -25,6 +77,8 @@ body{
 
 #bgimgs img{
   position: absolute;
+  animation: fadein 0.5s ease 4.5s 1 normal forwards;
+  opacity: 0;
 }
 
 #blue-container{
@@ -32,12 +86,6 @@ body{
   width: 100%;
   padding: 0.84% 0;
   /* height: 2100px; */
-}
-
-#red-container{
-  background-color: #9B0534;
-  width: 100%;
-  padding: 7.7% 0 13.3% 0
 }
 
 #white-container{
@@ -51,20 +99,36 @@ body{
   position: relative;
   left: -6%;
   width: 125%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 0 0 16.6% 0;
   /* white-space: nowrap; */
 }
 
 #explanation{
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 18.2% 0 16.7% 0;
   width: 84.8%;
   margin-right: 7.2%;
   margin-left: 8%;
+}
+
+#red-container{
+  background-color: #9B0534;
+  width: 100%;
+  padding: 13.3% 0 18.2% 0
 }
 
 .video-container{
@@ -86,10 +150,36 @@ body{
   background-color: #5CB4EF;
   text-align: center;
   color: white;
+  padding: 22% 0 22% 0;
+  position: relative;
+  z-index: -10;
+}
+
+#countdown-container{
+  width: 41.7%;
+  margin: 0 auto;
 }
 
 #countdown p{
   margin-top: 0;
-  font-size: 3vw;
   font-family: "GenShinGothic-Heavy";
+}
+
+#leftdate{
+  font-size: 3.12vw;
+  padding: 5% 0 0 0;
+  width: 53.7%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#leftdate::after {
+  position: absolute;
+  bottom: 16%;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 100%;
+  padding-bottom: 7.25%;
+  background-color: #FE79B2;
 }

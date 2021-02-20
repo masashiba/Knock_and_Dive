@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="bgimgs">
-      <img v-for="img in imgs" :key = "img.id" :src="'./img/bgimgs/' + img.feature + '.svg'" :style="{width: img.width*100/1920 + 'vw', top: img.top*100/1920 + 'vw', left: img.left*100/1920 + 'vw'}">
+      <img v-for="img in imgs" :key = "img.id" :src="'./img/bgimgs/' + img.name" :style="{width: img.width*100/1920 + 'vw', top: img.top*100/1920 + 'vw', left: img.left*100/1920 + 'vw'}">
     </div>
     <div id="blue-container">
       <div id="white-container">
@@ -18,7 +18,7 @@
           <img src="./img/5月2から5月3.svg" style="width:16%; transform:rotate(7.6deg); margin-bottom: 2%;">
         </div>
         <div id="logos">
-          <img v-for="id in 9" :src="'./img/logo/logo'+id+'.svg'" :style="{ width: (1.8*id+0.9) + '%' }">
+          <img v-for="id in 9" :src="'./img/logo/logo'+id+'.svg'" :style="{ width: (1.8*id+0.9) + '%' ,animation: 'popup 0.4s ease '+(0.1*id+3)+'s 1 normal forwards',transform: 'scale(0)'}">
         </div>
       </div>
       <div id="explanation">
@@ -34,8 +34,10 @@
       </div>
     </div>
     <div id="countdown" v-if="left>=0">
-      <p><img src="./img/type.svg" style="width:52%; margin-right: 3%">まで</p>
-      <p>あと<span style="font-size: 7vw; !important">{{ left }}</span>日</p>
+      <div id="countdown-container">
+        <p style="font-size: 2.08vw;"><img src="./img/white_Knock&Dive.svg" style="width:86.1%; margin: 0 3% -0.5% 0">まで</p>
+        <p id ="leftdate">あと<span style="font-size: 7.8vw; !important">{{ left }}</span>日</p>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>

@@ -15,7 +15,8 @@ explanationBox = {
         top: '1.6%',
         left: '-0.2%',
         width: '50%',
-        transform: 'rotate(-8.3deg)',
+        WebkitTransform: 'rotate(-8.3deg)',
+                transform: 'rotate(-8.3deg)',
         fontFamily: "GenShinGothic-Heavy",
         textAlign: "center"
       },
@@ -53,14 +54,21 @@ new Vue({
   el:"#bgimgs",
   data: {
     imgs:[
-      {index:0,feature:"black_square",width:302,top:-72,left:119},
-      {index:1,feature:"orange_rectangle",width:290,top:202,left:1673},
-      {index:2,feature:"pink_circle",width:183,top:922,left:1116},
-      {index:3,feature:"white_triangle",width:232,top:1149,left:-8},
-      {index:4,feature:"lightgreen_square",width:284,top:1342,left:1794},
-      {index:5,feature:"orange_circle",width:184,top:2196,left:363},
-      {index:6,feature:"blue_rectangle",width:378,top:2669,left:1664},
-      {index:7,feature:"green_triangle",width:191,top:3220,left:73}
+      {index:0,name:"black_square.svg",width:302,top:-72,left:119},
+      {index:1,name:"orange_rectangle.svg",width:290,top:202,left:1673},
+      {index:2,name:"pink_circle.svg",width:183,top:922,left:1116},
+      {index:3,name:"white_triangle.svg",width:232,top:1149,left:-8},
+      {index:4,name:"lightgreen_square.svg",width:284,top:1342,left:1794},
+      {index:5,name:"orange_circle.svg",width:184,top:2196,left:363},
+      {index:6,name:"blue_rectangle.svg",width:378,top:2669,left:1664},
+      {index:7,name:"green_triangle.svg",width:191,top:3220,left:73},
+      {index:8,name:"pink_circle.svg",width:183,top:4093,left:1761},
+      {index:9,name:"orange_rectangle.svg",width:290,top:4546,left:-35},
+      {index:10,name:"yellow_triangle1.png",width:100,top:3892,left:1493},
+      {index:11,name:"yellow_triangle2.png",width:100,top:3919,left:288},
+      {index:12,name:"yellow_triangle3.png",width:100,top:4410,left:1668},
+      {index:13,name:"yellow_triangle4.png",width:100,top:4507,left:275},
+      {index:14,name:"yellow_triangle5.png",width:100,top:4703,left:1211}
     ]
   }
 })
