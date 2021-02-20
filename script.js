@@ -1,34 +1,47 @@
 explanationBox = {
   props: ["title","message"],
   template: `<div style="position: relative">
-    <img src="./img/box_nothing.svg" style="width: 100%;">
-    <p :style="[titleStyle,{fontSize: width * 0.05 + 'px'}]"><span v-html="title"></span></p>
-    <div :style="[messageStyle,{fontSize: width * 0.044 + 'px'}]">
-      <p><span v-html="message"></span></p>
-    </div>
-  </div>`,
+              <img src="./img/box_nothing.svg" style="width: 100%;">
+              <p :style="[titleStyle,{fontSize: width * 0.04 + 'px'}]"><span v-html="title"></span></p>
+              <div :style="[messageStyle,{fontSize: width * 0.43 / Math.sqrt(messagelen) + 'px'}]">
+                <p><span v-html="message"></span></p>
+              </div>
+            </div>`,
   data: function(){
     return {
       width: 0,
       titleStyle: {
         position: 'absolute',
-        top: '1%',
-        left: '3%',
-        transform: 'rotate(-8.2deg)',
-        fontFamily: "GenShinGothic-Heavy"
+        top: '1.6%',
+        left: '-0.2%',
+        width: '50%',
+        transform: 'rotate(-8.3deg)',
+        fontFamily: "GenShinGothic-Heavy",
+        textAlign: "center"
       },
       messageStyle: {
         position: 'absolute',
-        width: '67%',
+        width: '63.1%',
         top: '18.9%',
-        left: '21.5%',
-        fontFamily: "GenShinGothic-Monospace-Regular"
+        left: '9.5%',
+        padding: '0 12.5% 0 13%',
+        fontFamily: "GenShinGothic-Medium"
       }
     }
   },
+  computed: {
+    messagelen: function(){
+      return this.message.length
+    }
+  },
+  methods: {
+    getTargetWidth: function() {
+      this.width = this.$el.clientWidth
+    }
+  },
   mounted: function(){
-    this.width = this.$el.clientWidth
-    console.log(this.width)
+    this.getTargetWidth()
+    window.addEventListener('resize', this.getTargetWidth)
   }
 }
 
@@ -70,5 +83,20 @@ new Vue({
         message: "“Knock&Dive”では、校舎への入場は、事前の予約が必要です。<br>応募期間は、３月20日から４月２日。応募者多数の場合は、抽選を行います。<br>詳しくはリンクをクリック！"
       }
     ]
+  }
+})
+
+new Vue({
+  el:"#countdown",
+  computed: {
+    maysecond: function(){
+      return new Date(2021, 4, 2, 0, 0, 0)
+    },
+    now: function(){
+      return Date.now()
+    },
+    left: function(){
+      return Math.ceil((this.maysecond - this.now)/(1000 * 60 * 60 * 24))
+    }
   }
 })
