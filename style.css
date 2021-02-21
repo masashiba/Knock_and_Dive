@@ -40,19 +40,8 @@
   }
 }
 
-@keyframes disableScroll {
-  0% {
-    overflow-y: hidden;
-  }
-  100% {
-    overflow-y: auto;
-  }
-}
-
 html{
   overflow-x: hidden;
-  overflow-y: hidden;
-  animation: disableScroll .1s linear 4.4s 1 normal forwards;
 }
 
 body{
