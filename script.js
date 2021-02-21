@@ -70,6 +70,17 @@ new Vue({
       {index:13,name:"yellow_triangle4.png",width:100,top:4507,left:275},
       {index:14,name:"yellow_triangle5.png",width:100,top:4703,left:1211}
     ]
+  },
+  methods: {
+    scrollTop: function(){
+      window.scrollTo({
+        top: 10,
+        behavior: "smooth"
+      });
+    }
+  },
+  mounted: function(){
+    this.scrollTop()
   }
 })
 
