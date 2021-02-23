@@ -104,6 +104,7 @@ body{
           transform: rotate(-7.6deg);
   margin: 0 21% -9% 5%;
   padding-top: 16%;
+  white-space: nowrap;
   -webkit-clip-path: inset(0 100% 0 0);
           clip-path: inset(0 100% 0 0);
   -webkit-animation: slide 2s ease 1s 1 normal forwards;
