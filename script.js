@@ -18,26 +18,25 @@ var imgsforpc = [
 
 var imgsformobile = [
   {index:0,name:"black_square.svg",width:302,top:-72,left:119},
-  {index:1,name:"orange_rectangle.svg",width:290,top:362,left:1673},
-  {index:2,name:"pink_circle.svg",width:183,top:1072,left:1116},
-  {index:3,name:"white_triangle.svg",width:232,top:1299,left:-8},
-  {index:4,name:"lightgreen_square.svg",width:284,top:1762,left:1734},
-  {index:5,name:"orange_circle.svg",width:184,top:4316,left:363},
-  {index:6,name:"blue_rectangle.svg",width:378,top:4789,left:1664},
-  {index:7,name:"green_triangle.svg",width:191,top:5340,left:73},
-  {index:8,name:"pink_circle.svg",width:183,top:6213,left:1761},
-  {index:9,name:"orange_rectangle.svg",width:290,top:6666,left:-35},
-  {index:10,name:"yellow_triangle1.png",width:100,top:6012,left:1493},
-  {index:11,name:"yellow_triangle2.png",width:100,top:6039,left:288},
-  {index:12,name:"yellow_triangle3.png",width:100,top:6530,left:1668},
-  {index:13,name:"yellow_triangle4.png",width:100,top:6627,left:275},
-  {index:14,name:"yellow_triangle5.png",width:100,top:6823,left:1211},
-  {index:15,name:"black_square.svg",width:231,top:2723,left:-20}
+  {index:1,name:"orange_rectangle.svg",width:290,top:422,left:1673},
+  {index:2,name:"pink_circle.svg",width:183,top:1152,left:1116},
+  {index:3,name:"white_triangle.svg",width:232,top:1459,left:-8},
+  {index:4,name:"lightgreen_square.svg",width:284,top:1862,left:1734},
+  {index:5,name:"orange_circle.svg",width:184,top:4516,left:363},
+  {index:6,name:"blue_rectangle.svg",width:378,top:4989,left:1664},
+  {index:7,name:"green_triangle.svg",width:191,top:5540,left:73},
+  {index:8,name:"pink_circle.svg",width:183,top:6413,left:1761},
+  {index:9,name:"orange_rectangle.svg",width:290,top:6866,left:-35},
+  {index:10,name:"yellow_triangle1.png",width:100,top:6212,left:1493},
+  {index:11,name:"yellow_triangle2.png",width:100,top:6239,left:288},
+  {index:12,name:"yellow_triangle3.png",width:100,top:6730,left:1668},
+  {index:13,name:"yellow_triangle4.png",width:100,top:6827,left:275},
+  {index:14,name:"yellow_triangle5.png",width:100,top:7023,left:1211},
+  {index:15,name:"black_square.svg",width:231,top:2823,left:-20}
 ]
 
 if (window.matchMedia("(min-width: 600px)").matches) {
   var imgs = imgsforpc;
-  alert('pcです');
 } else {
   var imgs = imgsformobile;
 }
