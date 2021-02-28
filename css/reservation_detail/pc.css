@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "GenShinGothic-Medium";
+  src: url("./assets/font/GenShinGothic-Medium.woff2") format("woff2"),
+       url("./assets/font/GenShinGothic-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GenShinGothic-Heavy";
+  src: url("./assets/font/GenShinGothic-Heavy.woff2") format("woff2"),
+       url("./assets/font/GenShinGothic-Heavy.woff") format("woff");
+}
+
+html,body{
+	font-family: "GenShinGothic-Medium";
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.bgimg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url("../../img/circles.svg");
+	background-size: cover;
+}
+
+.text-container {
+	width: 100%;
+	background: white;
+}
+
+.toptext {
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.subtext {
+	width: 40%;
+	margin-left: 30%; 
+	margin-bottom: 2rem;
+}
+
+.reservation-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.reservationtop {
+	font-size: 2.5rem;
+	border-bottom: solid #ED9A5D 0.5rem;
+	line-height: 2.1rem;
+	margin-bottom: 3rem;
+}
+
+.sannkaku {
+	height: 0;
+	width: 0;
+	margin: 3rem 0;
+	border-top: solid #5CB4EF 2rem;
+	border-left: solid transparent 2rem;
+	border-right: solid transparent 2rem;
+}
+
+.caution-container {
+	margin-top: 10vh;
+}
+
+.caution {
+	line-height: 2rem;
+	max-width: 60vw;
+}
