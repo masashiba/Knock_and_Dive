@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Knock & Dive | 第75回灘校文化祭</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" media="all">
+    <link rel="stylesheet" href="./pc.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="./mobile.css" media="screen and (max-width:600px)">
     <link rel="shortcut icon" href="./img/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   </head>
@@ -16,16 +18,16 @@
       <div id="blue-container">
         <div id="white-container">
           <div id="headimgs">
-            <img src="./img/第75回灘校文化祭.svg" style="width:26%; margin-bottom: 2%;">
-            <img src="./img/type.svg" style="width:52%; margin-right: 3%">
-            <img src="./img/5月2日から5月3日.svg" style="width:16%; transform:rotate(7.6deg); margin-bottom: 2%;">
+            <img id="schoolfesimg" src="./img/第75回灘校文化祭.svg">
+            <img id="typeimg" src="./img/type.svg">
+            <img id="dateimg" src="./img/5月2日から5月3日.svg">
           </div>
           <div id="logos">
             <img v-for="id in 9" :src="'./img/logo/logo'+id+'.svg'" :style="{ width: (1.8*id+0.9) + '%' ,animation: 'popup 0.4s ease '+(0.1*id+3)+'s 1 normal forwards',transform: 'scale(0)'}">
           </div>
         </div>
         <div id="explanation">
-          <explanation-box v-for="explanation in explanations" v-bind="explanation" :key="explanation.id" style="width: 48.5%">
+          <explanation-box id="explanationbox" v-for="explanation in explanations" v-bind="explanation" :key="explanation.id">
         </div>
       </div>
       <div id="red-container">
@@ -42,7 +44,7 @@
           <p id ="leftdate">あと<span style="font-size: 7.8vw; !important">{{ left }}</span>日</p>
         </div>
       </div>
-      <script src="./script.js"></script>
+      <script src="./script.js" media="screen and (min-width:600px)"></script>
     </div>
   </body>
 </html>

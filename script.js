@@ -1,3 +1,76 @@
+var imgsforpc = [
+  {index:0,name:"black_square.svg",width:302,top:-72,left:119},
+  {index:1,name:"orange_rectangle.svg",width:290,top:202,left:1673},
+  {index:2,name:"pink_circle.svg",width:183,top:922,left:1116},
+  {index:3,name:"white_triangle.svg",width:232,top:1149,left:-8},
+  {index:4,name:"lightgreen_square.svg",width:284,top:1342,left:1794},
+  {index:5,name:"orange_circle.svg",width:184,top:2196,left:363},
+  {index:6,name:"blue_rectangle.svg",width:378,top:2669,left:1664},
+  {index:7,name:"green_triangle.svg",width:191,top:3220,left:73},
+  {index:8,name:"pink_circle.svg",width:183,top:4093,left:1761},
+  {index:9,name:"orange_rectangle.svg",width:290,top:4546,left:-35},
+  {index:10,name:"yellow_triangle1.png",width:100,top:3892,left:1493},
+  {index:11,name:"yellow_triangle2.png",width:100,top:3919,left:288},
+  {index:12,name:"yellow_triangle3.png",width:100,top:4410,left:1668},
+  {index:13,name:"yellow_triangle4.png",width:100,top:4507,left:275},
+  {index:14,name:"yellow_triangle5.png",width:100,top:4703,left:1211}
+]
+
+var imgsformobile = [
+  {index:0,name:"black_square.svg",width:302,top:-72,left:119},
+  {index:1,name:"orange_rectangle.svg",width:290,top:362,left:1673},
+  {index:2,name:"pink_circle.svg",width:183,top:1072,left:1116},
+  {index:3,name:"white_triangle.svg",width:232,top:1299,left:-8},
+  {index:4,name:"lightgreen_square.svg",width:284,top:1762,left:1734},
+  {index:5,name:"orange_circle.svg",width:184,top:4316,left:363},
+  {index:6,name:"blue_rectangle.svg",width:378,top:4789,left:1664},
+  {index:7,name:"green_triangle.svg",width:191,top:5340,left:73},
+  {index:8,name:"pink_circle.svg",width:183,top:6213,left:1761},
+  {index:9,name:"orange_rectangle.svg",width:290,top:6666,left:-35},
+  {index:10,name:"yellow_triangle1.png",width:100,top:6012,left:1493},
+  {index:11,name:"yellow_triangle2.png",width:100,top:6039,left:288},
+  {index:12,name:"yellow_triangle3.png",width:100,top:6530,left:1668},
+  {index:13,name:"yellow_triangle4.png",width:100,top:6627,left:275},
+  {index:14,name:"yellow_triangle5.png",width:100,top:6823,left:1211},
+  {index:15,name:"black_square.svg",width:231,top:2723,left:-20}
+]
+
+if (window.matchMedia("(min-width: 600px)").matches) {
+  var imgs = imgsforpc
+} else {
+  var imgs = imgsformobile
+}
+
+var bgimgsvm = new Vue({
+  el:"#bgimgs",
+  data: {
+    imgs: imgs
+  },
+  methods: {
+    scrollTop: function(){
+      window.scrollTo({
+        top: 10,
+        behavior: "smooth"
+      });
+    }
+  },
+  mounted: function(){
+    this.scrollTop()
+  }
+})
+
+window.onresize = function(){
+  if (window.matchMedia("(min-width: 600px)").matches) {
+    bgimgsvm.$data.imgs = imgsforpc
+  } else {
+    bgimgsvm.$data.imgs = imgsformobile
+  }
+}
+
+new Vue({
+  el: "#logos"
+})
+
 explanationBox = {
   props: ["title","message"],
   template: `<div style="position: relative">
@@ -47,44 +120,6 @@ explanationBox = {
 }
 
 new Vue({
-  el: "#logos"
-})
-
-new Vue({
-  el:"#bgimgs",
-  data: {
-    imgs:[
-      {index:0,name:"black_square.svg",width:302,top:-72,left:119},
-      {index:1,name:"orange_rectangle.svg",width:290,top:202,left:1673},
-      {index:2,name:"pink_circle.svg",width:183,top:922,left:1116},
-      {index:3,name:"white_triangle.svg",width:232,top:1149,left:-8},
-      {index:4,name:"lightgreen_square.svg",width:284,top:1342,left:1794},
-      {index:5,name:"orange_circle.svg",width:184,top:2196,left:363},
-      {index:6,name:"blue_rectangle.svg",width:378,top:2669,left:1664},
-      {index:7,name:"green_triangle.svg",width:191,top:3220,left:73},
-      {index:8,name:"pink_circle.svg",width:183,top:4093,left:1761},
-      {index:9,name:"orange_rectangle.svg",width:290,top:4546,left:-35},
-      {index:10,name:"yellow_triangle1.png",width:100,top:3892,left:1493},
-      {index:11,name:"yellow_triangle2.png",width:100,top:3919,left:288},
-      {index:12,name:"yellow_triangle3.png",width:100,top:4410,left:1668},
-      {index:13,name:"yellow_triangle4.png",width:100,top:4507,left:275},
-      {index:14,name:"yellow_triangle5.png",width:100,top:4703,left:1211}
-    ]
-  },
-  methods: {
-    scrollTop: function(){
-      window.scrollTo({
-        top: 10,
-        behavior: "smooth"
-      });
-    }
-  },
-  mounted: function(){
-    this.scrollTop()
-  }
-})
-
-new Vue({
   el:"#explanation",
   components: {
      'explanation-box': explanationBox
@@ -99,7 +134,7 @@ new Vue({
       {
         id: 1,
         title: "予約準備中",
-        message: "“Knock&Dive”では、校舎への入場は、事前の予約が必要です。<br>応募期間は、３月20日から４月２日。応募者多数の場合は、抽選を行います。<br>詳しくはリンクをクリック！"
+        message: "“Knock&Dive”では、校舎への入場は、事前の予約が必要です。<br>応募期間は、３月20日から４月２日。応募者多数の場合は、抽選を行います。<br>詳細は追ってお伝えします！"
       }
     ]
   }
