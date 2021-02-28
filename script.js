@@ -36,9 +36,10 @@ var imgsformobile = [
 ]
 
 if (window.matchMedia("(min-width: 600px)").matches) {
-  var imgs = imgsforpc
+  var imgs = imgsforpc;
+  alert('pcです');
 } else {
-  var imgs = imgsformobile
+  var imgs = imgsformobile;
 }
 
 var bgimgsvm = new Vue({

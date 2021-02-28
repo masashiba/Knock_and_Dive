@@ -11,7 +11,8 @@
 #dateimg{
   width:19%;
   margin-bottom: 2%;
-  transform:rotate(7.6deg);
+  -webkit-transform:rotate(7.6deg);
+          transform:rotate(7.6deg);
 }
 
 #explanation{
