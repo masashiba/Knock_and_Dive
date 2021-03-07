@@ -129,14 +129,14 @@ body{
 
 @font-face {
   font-family: "GenShinGothic-Medium";
-  src: url("./assets/font/GenShinGothic-Medium.woff2") format("woff2"),
-       url("./assets/font/GenShinGothic-Medium.woff") format("woff");
+  src: url("../../assets/font/GenShinGothic-Medium.woff2") format("woff2"),
+       url("../../assets/font/GenShinGothic-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "GenShinGothic-Heavy";
-  src: url("./assets/font/GenShinGothic-Heavy.woff2") format("woff2"),
-       url("./assets/font/GenShinGothic-Heavy.woff") format("woff");
+  src: url("../../assets/font/GenShinGothic-Heavy.woff2") format("woff2"),
+       url("../../assets/font/GenShinGothic-Heavy.woff") format("woff");
 }
 
 @-webkit-keyframes popup {
