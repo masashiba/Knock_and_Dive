@@ -38,7 +38,7 @@ html,body{
 
 .subtext {
 	width: 80%;
-	margin-left: 10%; 
+	margin-left: 10%;
 	margin-bottom: 2rem;
 	font-size: 0.8rem;
 }
@@ -74,4 +74,19 @@ html,body{
 	line-height: 1.5rem;
 	font-size: 0.8rem;
 	max-width: 80%;
+}
+
+#formlink{
+  display: block;
+  width: 340px;
+  background-color: #5CB4EF;
+  margin: 5% auto;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-family: "GenShinGothic-Medium";
+  height: 80px;
+  line-height: 80px;
+  font-size: 20px;
+  border-radius: 40px;
 }

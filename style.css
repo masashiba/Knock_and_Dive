@@ -49,7 +49,6 @@ body{
   background-color: #FFF;
   width: 98.32%;
   margin: 0 auto;
-  padding-bottom: 8.6%
   /* height: 44%; */
 }
 
@@ -66,26 +65,11 @@ body{
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 0 0 8% 0;
+  padding: 0 0 16.6% 0;
 }
 
 #reservation-button{
-  display: block;
-  width: 340px;
-  background-color: #5CB4EF;
-  margin: auto;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
-  font-family: "GenShinGothic-Medium";
-  height: 80px;
-  line-height: 80px;
-  font-size: 20px;
-  border-radius: 40px;
-}
-
-#reservation-button:hover{
-  opacity: 0.9;
+  width: 30%;
 }
 
 #red-container{
@@ -149,14 +133,14 @@ body{
 
 @font-face {
   font-family: "GenShinGothic-Medium";
-  src: url("../../assets/font/GenShinGothic-Medium.woff2") format("woff2"),
-       url("../../assets/font/GenShinGothic-Medium.woff") format("woff");
+  src: url("./assets/font/GenShinGothic-Medium.woff2") format("woff2"),
+       url("./assets/font/GenShinGothic-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "GenShinGothic-Heavy";
-  src: url("../../assets/font/GenShinGothic-Heavy.woff2") format("woff2"),
-       url("../../assets/font/GenShinGothic-Heavy.woff") format("woff");
+  src: url("./assets/font/GenShinGothic-Heavy.woff2") format("woff2"),
+       url("./assets/font/GenShinGothic-Heavy.woff") format("woff");
 }
 
 @-webkit-keyframes popup {

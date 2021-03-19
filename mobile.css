@@ -1,0 +1,28 @@
+#schoolfesimg{
+  width: 45%;
+  margin-left: 2%;
+}
+
+#typeimg{
+  width:74%;
+  margin-right: 3%;
+}
+
+#dateimg{
+  width:19%;
+  margin-bottom: 2%;
+  -webkit-transform:rotate(7.6deg);
+          transform:rotate(7.6deg);
+}
+
+#explanation{
+  padding: 9% 0 16.7% 0;
+  width: 84.8%;
+  margin-right: 7.2%;
+  margin-left: 8%;
+}
+
+#explanationbox{
+  width: 97%;
+  margin-top: 9.2%
+}
