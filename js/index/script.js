@@ -133,7 +133,7 @@ new Vue({
       },
       {
         id: 1,
-        title: "予約準備中",
+        title: "予約受付中",
        message: "“Knock&Dive”では、校舎への入場は、事前の予約が必要です。<br>応募期間は、３月20日から４月２日。応募者多数の場合は、抽選を行います。<br><a href='https://fest.nada-sc.jp/2021/reservation_detail.html'>詳しくはこちら!</a>"
       }
     ]
