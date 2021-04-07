@@ -36,7 +36,6 @@
           <div id="logos">
             <img v-for="id in 9" :src="'./img/logo/logo'+id+'.svg'" :style="{ width: (1.8*id+0.9) + '%' ,animation: 'popup 0.4s ease '+(0.1*id+3)+'s 1 normal forwards',transform: 'scale(0)'}">
           </div>
-					<a href="./reservation_detail.html" id="reservation-button">予約はこちら！</a>
         </div>
         <div id="explanation">
           <explanation-box id="explanationbox" v-for="explanation in explanations" v-bind="explanation" :key="explanation.id">
