@@ -12,11 +12,11 @@
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Knock & Dive | 第75回灘校文化祭">
 		<meta property="og:description" content="今年は、校舎とオンラインの同時開催。
-部誌や展示物の公開、YouTubeチャンネルでの動画企画をはじめ、幅広い企画を５月２・３日に公開します。詳しくは、公式サイトやSNSで告知いたします。
+部誌や展示物の公開、YouTubeチャンネルでの動画企画をはじめ、幅広い企画を公開します。詳しくは、公式サイトやSNSで告知いたします。
 あなたも、灘校文化祭の世界へKnock＆Dive！">
 		<meta property="og:site_name" content="Knock & Dive | 第75回灘校文化祭">
 		<meta name="description" content="今年は、校舎とオンラインの同時開催。
-部誌や展示物の公開、YouTubeチャンネルでの動画企画をはじめ、幅広い企画を５月２・３日に公開します。詳しくは、公式サイトやSNSで告知いたします。
+部誌や展示物の公開、YouTubeチャンネルでの動画企画をはじめ、幅広い企画を公開します。詳しくは、公式サイトやSNSで告知いたします。
 あなたも、灘校文化祭の世界へKnock＆Dive！">
 		<meta name="google-site-verification" content="HlB1DrFwoD4TJIXIL4TEKOWLIPrHj1szS-U2mW4dcrk" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -31,7 +31,6 @@
           <div id="headimgs">
             <img id="schoolfesimg" src="./img/第75回灘校文化祭.svg">
             <img id="typeimg" src="./img/type.svg">
-            <img id="dateimg" src="./img/5月2日から5月3日.svg">
           </div>
           <div id="logos">
             <img v-for="id in 9" :src="'./img/logo/logo'+id+'.svg'" :style="{ width: (1.8*id+0.9) + '%' ,animation: 'popup 0.4s ease '+(0.1*id+3)+'s 1 normal forwards',transform: 'scale(0)'}">
@@ -47,12 +46,6 @@
         </div>
         <div class="video-container">
           <iframe class="video" src="https://www.youtube.com/embed/UuAKaZj4XFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div id="countdown" v-if="left>=0">
-        <div id="countdown-container">
-          <p style="font-size: 2.08vw; white-space: nowrap;"><img src="./img/white_Knock&Dive.svg" style="width:85.8%; margin: 0 3% -0.6% 0">まで</p>
-          <p id ="leftdate">あと<span style="font-size: 7.8vw; !important">{{ left }}</span>日</p>
         </div>
       </div>
       <script src="./js/index/script.js" media="screen and (min-width:600px)"></script>
